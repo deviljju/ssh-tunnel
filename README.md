@@ -66,7 +66,7 @@ $ ssh -i C:\Users\USER\Downloads\sshTunnel\key/config.pem -N -L 3307:5.6.7.8:543
   "host": "1.2.3.4", // SSH 접속 host
   "sshport": 22,     // SSH 접속 통신 포트
   "username": "deviljju", // SSH 접속 username
-  "keyfile": "config.pem", // SSH 접속 인증 key 파일명 /key/ 폴더 내에 해당 파일이 있어야함. password가 공백이면 keyfile을 읽지 않음
+  "keyfile": "myServer.pem", // SSH 접속 인증 key 파일명 /key/ 폴더 내에 해당 파일이 있어야함. password가 공백이면 keyfile을 읽지 않음
   "dsthost": "5.6.7.8", // SSH로 접속한 서버에서 통신할 host
   "dstport": 5432,        // SSH로 접속한 서버에서 통신할 host의 port
   "localport": 3007       // dsthost로 매핑할 내 컴퓨터 localhost의 port
@@ -90,10 +90,14 @@ NAME="myServer"
 ### ✅ 1. 리눅스 / macOS (bash/zsh 등)
 ```bash
 > NAME=config npm run start
+# 또는
+> set NAME=myServer npm run start
 ```
 ### ✅ 2. Window (CMD)
 ```bash
 > set NAME=config && npm run start
+# 또는
+> set NAME=myServer && npm run start
 ```
 ---
 작성자 : deviljju
