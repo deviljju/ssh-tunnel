@@ -1,0 +1,12 @@
+{
+  "name": "sshtunneling",
+  "description": "SSH Tunneling SERVICE",
+  "main": "./ssh",
+  "scripts": {
+    "start": "node ./ssh --watch"
+  },
+  "author": "deviljju",
+  "dependencies": {
+    "tunnel-ssh": "^5.2.0"
+  }
+}

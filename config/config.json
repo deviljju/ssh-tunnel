@@ -1,0 +1,10 @@
+{
+  "host": "1.2.3.4",
+  "sshport": 22,
+  "username": "deviljju",
+  "password": "password",
+  "keyfile": "config.pem",
+  "dsthost": "127.0.0.1",
+  "dstport": 5432,
+  "localport": 5432
+}
