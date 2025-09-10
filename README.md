@@ -36,7 +36,7 @@ $ npm i
 #### pem 파일로 인증을 하고자 하면 key 폴더 내에 파일을 넣는다.
 
 #### _**/config/config.json**_
-```json
+```jsonc
 {
   "host": "1.2.3.4", // SSH 접속 host
   "sshport": 22,     // SSH 접속 통신 포트
@@ -61,7 +61,7 @@ $ ssh -i C:\Users\USER\Downloads\sshTunnel\key/config.pem -N -L 3307:5.6.7.8:543
 ```
 #### 접속할 서버별로 json 파일과 pem 파일명을 같이 하여 관리해야 한다.
 #### _**/config/myServer.json**_
-```json
+```jsonc
 {
   "host": "1.2.3.4", // SSH 접속 host
   "sshport": 22,     // SSH 접속 통신 포트
@@ -73,7 +73,7 @@ $ ssh -i C:\Users\USER\Downloads\sshTunnel\key/config.pem -N -L 3307:5.6.7.8:543
 }
 ```
 #### _**/key/myServer.pem**_
-```json
+```text
 -----BEGIN OPENSSH PRIVATE KEY-----
 myServer PEM 파일
 -----END OPENSSH PRIVATE KEY-----
